@@ -13,8 +13,8 @@ class UserSeeder extends Seeder
 
         User::create([
         	'name' => "Richard Odigiri",
-        	'email' => "richysleeks@gmail.com",
-        	'password' => '$2y$10$mC6.KsnYmkVuNtr6bwIeB.l9TZSbS/u/KrnJl6l/RmjmhRhRqx6x6',
+        	'email' => "richysleek@gmail.com",
+        	'password' => '$2y$10$ycr2xzgSpXg4je9QIQuUluazxQ1ItOfIP6p0rrv.QwRgl4owqH0A2',
         	'typeable_id' => 1,
         	'typeable_type' => "App\\AdminUser"
         ]);
