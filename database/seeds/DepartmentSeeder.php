@@ -10,6 +10,7 @@ class DepartmentSeeder extends Seeder
     	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         // Department::truncate();
         // DB::statement("SET FOREIGN_KEY_CHECKS=1");
+        DB::statement("TRUNCATE TABLE {$table} RESTART IDENTITY CASCADE");
 
         Department::create(['name' => 'Research and Documentation']);
         Department::create(['name' => 'Administration']);
