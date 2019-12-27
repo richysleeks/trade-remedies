@@ -7,9 +7,9 @@ class CaseUserSeeder extends Seeder
 {
     public function run()
     {
-    	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+    	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         CaseUser::truncate();
-        DB::statement("SET FOREIGN_KEY_CHECKS=1");
+        // DB::statement("SET FOREIGN_KEY_CHECKS=1");
 
         CaseUser::create([
         	'company_name' => "Kaduna Markets Development & Management Company",

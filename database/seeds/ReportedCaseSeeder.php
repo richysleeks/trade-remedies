@@ -7,9 +7,9 @@ class ReportedCaseSeeder extends Seeder
 {
     public function run()
     {
-    	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+    	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         ReportedCase::truncate();
-        DB::statement("SET FOREIGN_KEY_CHECKS=1");
+      //   DB::statement("SET FOREIGN_KEY_CHECKS=1");
 
         ReportedCase::create([
         	'created_by' => 2,

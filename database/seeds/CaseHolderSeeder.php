@@ -7,9 +7,9 @@ class CaseHolderSeeder extends Seeder
 {
     public function run()
     {
-    	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+    	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         CaseHolder::truncate();
-        DB::statement("SET FOREIGN_KEY_CHECKS=1");
+      //   DB::statement("SET FOREIGN_KEY_CHECKS=1");
 
         CaseHolder::create([
         	'reported_case_id' => 1,

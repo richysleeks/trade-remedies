@@ -8,9 +8,9 @@ class PermissionSeeder extends Seeder
 
     public function run()
     {
-    	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+    	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         Permission::truncate();
-        DB::statement("SET FOREIGN_KEY_CHECKS=1");
+        // DB::statement("SET FOREIGN_KEY_CHECKS=1");
 
         //Administrator Permissions
         Permission::create(['name' => 'browse_administrator', 'guard_name' => 'web', 'display_name' => 'Browse Administrator', 'table_name'=> 'administrator']);

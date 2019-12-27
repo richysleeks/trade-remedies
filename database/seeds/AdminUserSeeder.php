@@ -7,9 +7,9 @@ class AdminUserSeeder extends Seeder
 {
     public function run()
     {
-    	DB::statement("SET FOREIGN_KEY_CHECKS=0");
+    	// DB::statement("SET FOREIGN_KEY_CHECKS=0");
         AdminUser::truncate();
-        DB::statement("SET FOREIGN_KEY_CHECKS=1");
+      //   DB::statement("SET FOREIGN_KEY_CHECKS=1");
 
         AdminUser::create([
         	'department' => 1,
